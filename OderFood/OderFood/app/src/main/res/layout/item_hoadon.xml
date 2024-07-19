@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:backgroundTint="#FDF1FF"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/anh_hoadon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="Mã hóa đơn"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_mahd"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="Ngày mua"
+                    android:id="@+id/tv_ngaylap"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Tổng sản phẩm"
+                android:id="@+id/tv_tongsanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Mã tài khoản"
+                android:id="@+id/tv_matk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Họ tên"
+                android:id="@+id/tv_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Số điện thoại"
+                android:id="@+id/tv_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Địa chỉ"
+                android:id="@+id/tv_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textStyle="bold"
+                android:text="Tổng tiền"
+                android:id="@+id/tv_tongtien"
+                android:textColor="#FF0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textSize="13sp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:layout_weight="1"
+                    android:text="Trạng thái"
+                    android:id="@+id/tv_trangthai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_gradient_green"
+                    android:id="@+id/btn_doiTT"
+                    android:text="THAY ĐỔI"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/img_xoa"
+                android:src="@drawable/logo_delete_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

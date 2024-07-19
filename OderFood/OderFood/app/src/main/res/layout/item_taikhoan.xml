@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:backgroundTint="#CCFFF6F6"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/anh_avatar"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            />
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="Mã tài khoản"
+                    android:id="@+id/tv_matk"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:id="@+id/tv_loaitaikhoan"
+                    android:text="loại tài khoản"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Họ tên"
+                android:id="@+id/tv_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Tài khoản"
+                android:id="@+id/tv_taikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:id="@+id/tv_matkhau"
+                android:text="Mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Số điện thoại"
+                android:id="@+id/tv_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Địa chỉ"
+                android:id="@+id/tv_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/img_chucnang"
+                android:src="@drawable/ic_more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

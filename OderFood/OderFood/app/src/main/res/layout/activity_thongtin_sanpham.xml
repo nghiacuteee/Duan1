@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietSanPham"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="4"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:layout_gravity="left"
+        android:id="@+id/img_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_back"
+        />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/img_anhSP"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            >
+            <ImageView
+                android:id="@+id/img_tru"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_remove_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="30sp"
+                android:id="@+id/tv_soluong"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/img_cong"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_add_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_weight="1"
+                android:id="@+id/tv_tenSP"
+                android:textSize="35sp"
+                android:text="Tên sản phẩm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_like"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:src="@drawable/ic_sao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <ImageView
+                android:src="@drawable/ic_sao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <ImageView
+                android:src="@drawable/ic_sao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <ImageView
+                android:src="@drawable/ic_sao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <ImageView
+                android:src="@drawable/ic_sao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:fontFamily="@font/open_sans_regular"
+                    android:id="@+id/tv_giaSP"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:textColor="#3F9785"
+                    android:text="Giá sản phẩm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:textColor="#3F9785"
+                    android:text=" VNĐ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="16sp"
+                android:text="Mô tả: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_weight="3"
+                android:id="@+id/tv_motaSP"
+                android:textSize="16sp"
+                android:text="Mô tả"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Nguyên liệu: lựa chọn nguyên liệu tươi ngon, sạch sẽ có nguồn gốc rõ ràng được lựa chọn kĩ càng đảm bảo chất lương vệ sinh an toàn thực phẩm."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            >
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/bg_gradient_orange_blod"
+                android:id="@+id/btn_themGioHang"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="THÊM VÀO GIỎ HÀNG"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

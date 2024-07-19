@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mQLTrangChu"
+        android:title="Cửa hàng"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item android:title="Admin">
+        <menu>
+            <item
+                android:id="@+id/mQLSanPham"
+                android:title="Quản lý sản phẩm"
+                android:icon="@drawable/ic_product"
+                />
+            <item
+                android:id="@+id/mQLTheLoai"
+                android:title="Quản lý thể loại"
+                android:icon="@drawable/ic_category"
+                />
+            <item
+                android:id="@+id/mQLTaiKhoan"
+                android:title="Quản lý tài khoản"
+                android:icon="@drawable/ic_people"
+                />
+            <item
+                android:id="@+id/mQLHoaDon"
+                android:title="Quản lý hóa đơn"
+                android:icon="@drawable/ic_bookmark"
+                />
+            <item
+                android:id="@+id/mThongKe"
+                android:title="Thống kê"
+                android:icon="@drawable/ic_thongke"
+                />
+        </menu>
+    </item>
+
+    <item android:title="Người dùng">
+        <menu>
+            <item
+                android:id="@+id/mThongTinApp"
+                android:title="Thông tin ứng dụng"
+                android:icon="@drawable/ic_detail"
+                />
+            <item
+                android:id="@+id/mDoiMatKhau"
+                android:title="Đổi mật khẩu"
+                android:icon="@drawable/ic_key"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/mDangXuat"
+        android:title="Đăng xuất"
+        android:icon="@drawable/ic_logout"
+        />
+
+
+</menu>

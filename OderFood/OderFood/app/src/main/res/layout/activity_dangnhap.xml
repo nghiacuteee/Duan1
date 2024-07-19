@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity"
+    android:gravity="center"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_marginBottom="50dp"
+            android:textSize="30sp"
+            android:textColor="#FF5722"
+            android:text="ĐĂNG NHẬP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@drawable/boder_orange2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <ImageView
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/ic_user_gray"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+            <EditText
+                android:background="@null"
+                android:id="@+id/ed_taikhoan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tài khoản"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:background="@drawable/boder_orange2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_pass_gray"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+            <EditText
+                android:background="@null"
+                android:id="@+id/ed_matkhau"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/open_sans_bold"
+            android:id="@+id/tv_quenmatkhau"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Quên mật khẩu ? "
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            >
+            <TextView
+                android:id="@+id/btn_dangnhap"
+                android:text="ĐĂNG NHẬP"
+                android:textSize="20sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:background="@drawable/bg_gradient_orange_blod"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="15sp"
+                android:text="Bạn chưa có tài khoản ?  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:id="@+id/tv_dangki"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text="Đăng ký "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:background="@drawable/line_bottom_dialog" />
+
+    <TextView
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginTop="10dp"
+        android:text="XÁC NHẬN THANH TOÁN"
+        android:textSize="20dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Người nhận hàng:"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Tên người nhận"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Số điện thoại:"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Số điện thoại"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Giao đến:"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Địa chỉ"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFEFEA"
+            >
+
+            <RadioGroup
+                android:padding="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_marginLeft="7dp"
+                    android:text="Phương thức thanh toán"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="#FF5722"
+                    />
+
+                <RadioButton
+                    android:textStyle="italic"
+                    android:text="Thanh toán tiền mặt khi nhận hàng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:textStyle="italic"
+                    android:text="Qua thẻ ATM (Internet Banking)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:textStyle="italic"
+                    android:text="Qua VNPay-QR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:textStyle="italic"
+                    android:text="Qua thẻ quốc tế Visa, Master, JCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:textStyle="italic"
+                    android:text="Quét mã SmartPay-QR qua ứng dụng ngân hàng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RadioGroup>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_dathang"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gradient_blue"
+            android:text="THANH TOÁN"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="18sp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/btn_huy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gradient_blue"
+            android:text="HỦY"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="18sp"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+
+</LinearLayout>

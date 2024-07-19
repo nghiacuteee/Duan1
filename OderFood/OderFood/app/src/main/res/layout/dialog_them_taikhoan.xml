@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:background="@drawable/line_bottom_dialog" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="THÊM TÀI KHOẢN"
+        android:textSize="22dp"
+        android:textColor="#3F51B5"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Tài khoản:"
+                android:textSize="16sp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_taikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Tài khoản"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Mật khẩu:  "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_matkhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Mật khẩu"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Họ tên:"
+                android:textSize="16sp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Họ tên"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="SĐT:"
+                android:textSize="16sp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Số điện thoại"
+                android:inputType="number"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Địa chỉ:"
+                android:textSize="16sp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/ed_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_orange2"
+                android:hint="Địa chỉ"
+                android:inputType="text"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_blue"
+                android:text="THÊM"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="18sp"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_blue"
+                android:text="HỦY"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="18sp"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
